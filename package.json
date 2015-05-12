@@ -2,7 +2,7 @@
   "name": "geo-utils",
   "version": "0.0.1",
   "description": "Geocoding utilities",
-  "main": "lib/geo-utils.js",
+  "main": "./lib/geo-utils.js",
   "scripts": {
     "test": "mocha test/test.js"
   },
