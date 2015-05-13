@@ -36,8 +36,25 @@ describe('GeoUtils', function () {
 	});
     });
 
-
-    
+    it('route', function (done) {
+	var origin, dst;
+	origin = {
+	    latitude: 35.682306,
+	    longitude: 139.766063
+	};
+	dst = {
+	    latitude: 35.710372,
+	    longitude: 139.810695
+	};
+	GeoUtils.route(origin, dst, function (err, result) {
+	    if (err) {
+		console.log(err);
+	    }
+	    var data = result;
+	    console.log(result.routes[0].legs[0].distance);
+	    console.log(result.routes[0].legs[0].duration);
+	});
+    });
 });
 
 
