@@ -1,6 +1,6 @@
 {
   "name": "geo-utils-jp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Geocoding utilities",
   "main": "./lib/geo-utils.js",
   "scripts": {
